@@ -20,11 +20,7 @@
         <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
-<<<<<<< HEAD
-                <a href="" class="navbar-brand">
-=======
                 <a href="{% url 'core:index' %}" class="navbar-brand">
->>>>>>> 79363db975d0e3a4d67075b6377f11b39c597667
                     Bookworm
                 </a>
             </div>
@@ -32,25 +28,6 @@
         </nav>
     </header>
     <div class="container">
-<<<<<<< HEAD
-=======
-        {% if breadcrumbs %}
-            <ol class="breadcrumb">
-                <li><a href="{% url 'core:index' %}">Home</a></li>
-                {% for breadcrumb in breadcrumbs %}
-                    <li>
-                        {% if breadcrumb.1 %}
-                            <a href="{% url 'bookcases:bookcase_list' %}">
-                        {% endif %}
-                        {{ breadcrumb.0 }}
-                        {% if breadcrumb.1 %}
-                            </a>
-                        {% endif %}
-                    </li>
-                {% endfor %}
-            </ol>
-        {% endif %}
->>>>>>> 79363db975d0e3a4d67075b6377f11b39c597667
         {% block content %}
 
         {% endblock %}
