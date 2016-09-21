@@ -1,16 +1,15 @@
 {% extends "core/base.html" %}
 
 {% block content %}
-    <div class="jumbotron jumbotron-index">
-        <h1>Bookworm</h1>
-    </div>
     
+        <h1>
+            Bookworm
+        </h1>
+    </div>
     <ul class="list-group">
         <li class="list-group-item">
-            <a href="#">
-                View Bookcases
-            </a>
+            <a href="{% url 'bookcases:bookcase_list' %}">View Bookcases</a>
         </li>
-    </ul>                
+    </ul>
 
 {% endblock content %}

@@ -4,14 +4,26 @@ body{
 }
 
 
-
-.page-footer{
+.page-footer {
     position: fixed;
     bottom: 0;
-    width: 100%;
     background-color: #fff;
+    width: 100%;
 }
 
-.jumbotron-index{
+.jumbotron-index {
     text-align: center;
+}
+
+.book-thumbnail {
+    background-color: #eee;
+}
+
+.book-thumbnail .caption {
+    background-color: #fff;
+    margin-top: 4px;
+}
+.book-thumbnail .book-cover {
+    min-height: 240px;
+
 }
